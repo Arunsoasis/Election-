@@ -30,7 +30,7 @@ img{max-width:100%}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
-/* Layout: left-aligned navy masthead with an oversized marigold "24", then alternating paper/navy bands; a 48-month grid carries the "show up every month" promise. */
+/* Layout: left-aligned navy masthead with an oversized marigold "24", then alternating paper/navy bands; a 48-month grid carries the "show up all term" promise. */
 :root{
   --navy:#0E1B3D; --navy-2:#182B5E; --navy-ink:#C9D2EC;
   --gold:#F2B705; --gold-soft:#FFF4D1; --gold-ink:#3A2B00;
@@ -348,12 +348,12 @@ footer .big{font:900 2.2rem/1 var(--display);font-variation-settings:"wdth" 72;c
         <p>As a real estate agent, he sits at kitchen tables every week with people who can't make rent and groceries work on today's wages. He sees young families priced out, seniors worried about staying in their homes, and neighbours sleeping rough in a city that should do better.</p>
         <p>Arun is running because too many residents only see their councillor at election time. His promise is simple. After he wins, he keeps showing up, keeps listening, and reports back on what he did.</p>
       </div>
-      <div class="months" aria-label="Showing up every month">
+      <div class="months" aria-label="Showing up all term">
         <p class="eyebrow">One term = 48 months</p>
         <div class="row"><b>Seen only at election time</b><div class="grid48 typ" id="g-typ"></div></div>
         <div class="row"><b>Arun's commitment</b><div class="grid48 arun" id="g-arun"></div></div>
         <div class="legend"><span>Month 1</span><span>Month 48</span></div>
-        <p class="note">An open ward meeting every month of the term, plus regular door knocking and report backs.</p>
+        <p class="note">Showing up all term long: regular open ward meetings, door knocking and report backs.</p>
       </div>
     </div>
   </div>
@@ -395,7 +395,7 @@ footer .big{font:900 2.2rem/1 var(--display);font-variation-settings:"wdth" 72;c
     <div class="acct-grid">
       <article class="card"><span class="freq">Quarterly</span><h3>Ward 24 report card</h3><p>A plain-language update on every project in the ward: what was budgeted, what was spent, and what's late.</p></article>
       <article class="card"><span class="freq">Monthly</span><h3>311 response tracker</h3><p>How long city requests in Ward 24 take to close, by type, so slow service gets noticed and fixed.</p></article>
-      <article class="card"><span class="freq">Monthly</span><h3>Open ward meetings</h3><p>Rotating across Guildwood, West Hill, Morningside, Woburn and Scarborough Village, in person and online.</p></article>
+      <article class="card"><span class="freq">Regularly</span><h3>Open ward meetings</h3><p>Rotating across Guildwood, West Hill, Morningside, Woburn and Scarborough Village, in person and online.</p></article>
       <article class="card"><span class="freq">Before any vote</span><h3>Residents first</h3><p>Big local decisions, from developments to road changes, go to a ward meeting before they go to council.</p></article>
       <article class="card"><span class="freq">Every vote</span><h3>How I voted, and why</h3><p>A short note after each council meeting explaining Arun's votes on issues that affect Ward 24.</p></article>
       <article class="card"><span class="freq">Ongoing</span><h3>You choose projects</h3><p>Push for a participatory budget so residents vote on how part of local improvement money is spent.</p></article>
@@ -436,7 +436,7 @@ footer .big{font:900 2.2rem/1 var(--display);font-variation-settings:"wdth" 72;c
     <div>
       <p class="eyebrow">Your voice</p>
       <h2 id="voice-h" style="margin-top:14px">Tell Arun what your street needs.</h2>
-      <p class="lede" style="margin-top:16px">Pick what matters most, add details about your street or intersection, then send it to Arun on Instagram or Facebook. He reads them.</p>
+      <p class="lede" style="margin-top:16px">Pick what matters most, add details about your street or intersection, then send it to Arun by email, Instagram or Facebook. He reads them.</p>
       <form id="vform" novalidate>
         <fieldset style="border:0;padding:0;margin:24px 0 0">
           <legend style="font-weight:700">What matters most to you?</legend>
@@ -460,11 +460,12 @@ footer .big{font:900 2.2rem/1 var(--display);font-variation-settings:"wdth" 72;c
       <div class="preview" id="v-preview" aria-live="polite"></div>
       <div class="actions">
         <button class="btn btn-gold" type="button" id="v-copy">Copy message</button>
-        <a class="btn btn-navy" href="https://www.instagram.com/arunsivanandan_for_ward24/" target="_blank" rel="noopener">Open Instagram</a>
+        <a class="btn btn-navy" id="v-email" href="mailto:councillorarun@gmail.com">Email Arun</a>
+        <a class="btn btn-line" href="https://www.instagram.com/arunsivanandan_for_ward24/" target="_blank" rel="noopener">Open Instagram</a>
         <a class="btn btn-line" href="https://www.facebook.com/profile.php?id=61595651129530" target="_blank" rel="noopener">Open Facebook</a>
       </div>
       <p class="status" id="v-status"></p>
-      <p style="color:var(--muted);font-size:.93rem;margin-top:6px">Copy the message, open Instagram or Facebook, and paste it into a direct message to Arun.</p>
+      <p style="color:var(--muted);font-size:.93rem;margin-top:6px">Tap Email Arun to send it from your email app, or copy it and paste it into a direct message on Instagram or Facebook. You can also email <a href="mailto:councillorarun@gmail.com">councillorarun@gmail.com</a> directly.</p>
     </div>
   </div>
 </section>
@@ -511,8 +512,8 @@ footer .big{font:900 2.2rem/1 var(--display);font-variation-settings:"wdth" 72;c
     <details open><summary>Which neighbourhoods are in Ward 24?</summary><p>Scarborough-Guildwood includes Guildwood, West Hill, Morningside, Woburn and Scarborough Village. It runs from Highway 401 south to Lake Ontario, between roughly Markham Road and McCowan in the west and Morningside Avenue in the east.</p></details>
     <details><summary>Can a councillor really fix housing costs?</summary><p>Not alone, but a councillor votes on zoning, development approvals and the city budget. Arun will back homes families can afford, push for supportive housing and shelter-to-home services, and make sure new buildings come with the transit, schools and parks to support them.</p></details>
     <details><summary>What will you do about TTC delays in winter?</summary><p>Press for bus routes and stops to be cleared first, ask the TTC for Ward 24 reliability data after every storm, and bring residents' complaints to the TTC directly instead of letting them disappear.</p></details>
-    <details><summary>How will I know you're doing what you promised?</summary><p>A quarterly report card on spending and projects, a monthly 311 response tracker, a note on how he voted after each council meeting, and an open ward meeting every month.</p></details>
-    <details><summary>How do I reach Arun?</summary><p>Send a message on Instagram (@arunsivanandan_for_ward24) or Facebook. Use the form above to put your message together.</p></details>
+    <details><summary>How will I know you're doing what you promised?</summary><p>A quarterly report card on spending and projects, a monthly 311 response tracker, a note on how he voted after each council meeting, and regular open ward meetings.</p></details>
+    <details><summary>How do I reach Arun?</summary><p>Email <a href="mailto:councillorarun@gmail.com">councillorarun@gmail.com</a>, or send a message on Instagram (@arunsivanandan_for_ward24) or Facebook. Use the form above to put your message together.</p></details>
   </div>
 </section>
 </main>
@@ -524,7 +525,8 @@ footer .big{font:900 2.2rem/1 var(--display);font-variation-settings:"wdth" 72;c
       <p style="margin-top:8px">City Councillor candidate, Ward 24 Scarborough-Guildwood</p>
     </div>
     <div>
-      <h4>Follow and message</h4>
+      <h4>Contact Arun</h4>
+      <p style="margin-bottom:12px"><a href="mailto:councillorarun@gmail.com">councillorarun@gmail.com</a></p>
       <div class="social">
         <a href="https://www.instagram.com/arunsivanandan_for_ward24/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
         <a href="https://www.facebook.com/profile.php?id=61595651129530" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 8h-2a2 2 0 0 0-2 2v11M8 13h6"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg>Facebook</a>
@@ -586,7 +588,7 @@ footer .big{font:900 2.2rem/1 var(--display);font-variation-settings:"wdth" 72;c
      d:['Track 311 requests in Ward 24 and follow up on the ones that stall.','A ward office that answers calls and messages, with a promised reply time.','Ask for staff reports when departments miss their own service standards.','Publish what was budgeted and spent on local projects.'],
      r:'Monthly 311 tracker and the quarterly Ward 24 report card.'},
     {k:'voice',t:'Public participation',h:'Residents in the room before decisions',w:'Too many decisions reach council before the people affected hear about them. Arun will bring the decisions to the neighbourhood first.',
-     d:['Monthly open ward meetings in rotating neighbourhoods, in person and online.','Consult residents before any major development or road change goes to council.','Push for participatory budgeting so residents vote on local projects.','Hold public meetings on new issues, like AI data centres, before decisions are made.'],
+     d:['Regular open ward meetings in rotating neighbourhoods, in person and online.','Consult residents before any major development or road change goes to council.','Push for participatory budgeting so residents vote on local projects.','Hold public meetings on new issues, like AI data centres, before decisions are made.'],
      r:'A note after each council meeting on how Arun voted and why.'}
   ];
   const tabs=document.getElementById('tabs'), panel=document.getElementById('panel');
@@ -617,7 +619,7 @@ footer .big{font:900 2.2rem/1 var(--display);font-variation-settings:"wdth" 72;c
     if(sel.length)m+=' What matters most to me: '+sel.join(', ')+'.';
     if(note.value.trim())m+='\n\n'+note.value.trim();
     m+='\n\nPlease keep me posted.';
-    prev.textContent=m;store.set('w24-voice',{issues:sel,area:area.value,note:note.value});return m;
+    prev.textContent=m;document.getElementById('v-email').href='mailto:councillorarun@gmail.com?subject='+encodeURIComponent('Message from a Ward 24 resident')+'&body='+encodeURIComponent(m);store.set('w24-voice',{issues:sel,area:area.value,note:note.value});return m;
   }
   document.getElementById('vform').addEventListener('input',msg);document.getElementById('vform').addEventListener('change',msg);
   document.getElementById('vform').addEventListener('submit',e=>e.preventDefault());
